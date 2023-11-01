@@ -13,27 +13,88 @@
   <style>
     html,
     body {
-      margin: 0;
-      padding: 0;
       font-family: sans-serif;
       background-color: #ededed;
     }
+
+    .wrapper{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 960px; 
+}
+
   </style>
   <title>polaris-chip</title>
 </head>
 
 <body>
-  <wrapper>
-  <polaris-chip name="88,000+ students"></polaris-chip>
-  <polaris-chip name="58% Of students are Pennslyvania residents."></polaris-chip>
-  <polaris-chip name="Students from 50 states and 145 countries" ></polaris-chip>
-  <polaris-chip>Check out Undergraduate Admissions statistics</polaris-chip>
-  <polaris-chip>Nearly 10,000 international students</polaris-chip>
-  <polaris-chip>39% Of students are from diverse backgrounds</polaris-chip>
-  <polaris-chip>7,900+ faculty across all</polaris-chip>
-  <polaris-chip>759,000+ alumni</polaris-chip>
-  <polaris-chip>See Penn State's Data Digest dashboards</polaris-chip>
-</wrapper>
+  <div class="wrapper">
+  <polaris-chip
+  h3="88,000+ students" 
+  backgroundColor="#1e407c"
+  style=" --text-size: 40px;"
+  
+  ></polaris-chip>
+ 
+  <polaris-chip 
+  h3="58% of students are Pennslyvania residents." 
+  backgroundColor="white"
+  style=" --text-size: 40px; --text-color: rgb(0, 30, 68)"
+  ></polaris-chip>
+
+
+<polaris-chip 
+  h3="Students from 50 states and 145 countries" 
+  backgroundColor="rgb(0, 30, 68)"
+  style=" --text-size: 40px;"
+  ></polaris-chip>
+
+  <a href="https://admissions.psu.edu/apply/statistics/">
+<polaris-chip 
+  h3="Check out Undergraduate Admissions statistics" 
+  backgroundColor="rgba(0, 3, 33, 0.5)"
+  backgroundImage= "url(https://www.psu.edu/psu-edu-assets/images/power-facts/penn-state-tuition.jpg)"
+  style="--text-size: 40px; --text-color:white;"
+  
+  ></polaris-chip>
+  </a>
+<polaris-chip 
+  h3="Nearly 10,000 international students
+  " 
+  backgroundColor="#1e407c"
+  style="--text-size: 40px;"
+  ></polaris-chip>
+
+<polaris-chip 
+  h3="39%
+  Of students are from diverse backgrounds." 
+  backgroundColor="white"
+  style="--text-size: 40px; --text-color:rgb(0, 30, 68);"
+  
+  ></polaris-chip>
+
+<polaris-chip 
+  h3="7,900+ faculty across all campuses" 
+  style="--text-size: 40px;"
+  backgroundColor="rgb(0, 30, 68)"
+  
+  ></polaris-chip>
+
+<polaris-chip 
+  h3="759,000+ alumni" 
+  backgroundColor="rgb(0, 30, 68)"
+  style="--text-size: 40px;"
+  ></polaris-chip>
+
+  <a href="https://admissions.psu.edu/apply/statistics/">
+<polaris-chip 
+  h3="See Penn State's Data Digest dashboards" 
+  backgroundColor="rgba(0, 3, 33, 0.5)"
+  backgroundImage="url(https://www.psu.edu/psu-edu-assets/images/power-facts/data-digest.jpg)"
+  style="--text-size: 40px;"
+  ></polaris-chip>
+</div>
+</a>
   <script type="module" src="./src/polaris-chip.js"></script>
 </body>
 
